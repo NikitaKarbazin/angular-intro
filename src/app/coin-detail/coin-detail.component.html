@@ -1,0 +1,16 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3 details">
+      <div class="img">
+        <img [src]="coinData?.image?.large" [alt]="coinData.id">
+        <h1 class="text-center">{{coinData?.name}}</h1>
+        <h2>{{coinData?.description?.en.split('. ')[0]}}</h2>
+        <div class="more-detail">
+          <span class="title"> Rank: {{coinData?.coingecko_rank}}</span>
+          <br>
+          <span class="title"> Rank on market : {{coinData?.market_cap_rank}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
